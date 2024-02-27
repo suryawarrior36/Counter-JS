@@ -1,7 +1,12 @@
+let numEl = document.getElementById("counter-number")
+let count=0
+
 const incrementFunction = () => {
-    console.log(`increment logged!`)
+    count += 1
+    numEl.textContent = count
 }
 
 const decrementFunction = () => {
-    console.log(`decrement logged!`)
+    count -=1
+    numEl.textContent = count
 }
